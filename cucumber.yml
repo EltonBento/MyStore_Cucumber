@@ -1,0 +1,4 @@
+---
+  default: -p pretty -p dev
+  pretty: --format pretty
+  dev: ENVIRONMENT=DEV
