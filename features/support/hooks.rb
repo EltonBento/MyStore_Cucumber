@@ -4,7 +4,5 @@ After do |scenario|
 
     if scenario.failed?
         screenshot(scenario_name.downcase!,'failed')    
-    else
-        screenshot(scenario_name.downcase!,'passed')
     end
 end    
