@@ -9,6 +9,8 @@ class CreateAccoutPage < SitePrism::Page
     element :zip_code,'#postcode'
     element :mobile_phone,'#phone_mobile'
     element :register_btn,'#submitAccount'
+    element :state,'#id_state'
+    element :country, '#id_country'
     
 
     def create_an_account

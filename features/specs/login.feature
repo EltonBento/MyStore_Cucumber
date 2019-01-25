@@ -1,7 +1,6 @@
 @login
 Feature: Login
 
-
 Scenario: Sucessful Login
 Given I am at the authenticatian page
 When I login 

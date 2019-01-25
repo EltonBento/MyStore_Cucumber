@@ -1,7 +1,7 @@
 
 Feature: Create an account
 
-
+@only
 Scenario: Creating an account successfully
 Given I am at the authenticatian page
 When I create an account
@@ -60,7 +60,7 @@ Given I am at the authenticatian page
 When I try to create an account with an invalid zip-code
 Then I should get "The Zip/Postal code you've entered is invalid. It must follow this format: 00000" message
 
-@only
+
 Scenario: Creating an account without a phone number
 Given I am at the authenticatian page
 When I try to create an account wihtout filling the field phone number

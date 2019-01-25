@@ -11,4 +11,8 @@ module Pages
     def create_account_page
         @create_account_page ||= CreateAccoutPage.new
     end    
+
+    def customer_service_page
+        @customer_service_page ||= CustomerServicePage.new
+    end 
 end    
