@@ -15,4 +15,16 @@ module Pages
     def customer_service_page
         @customer_service_page ||= CustomerServicePage.new
     end 
+
+    def home_page
+        @home_page ||= HomePage.new
+    end 
+
+    def product_page
+        @product_page ||= ProductPage.new
+    end
+
+    def order_page
+        @order_page ||= OrderPage.new
+    end
 end    
