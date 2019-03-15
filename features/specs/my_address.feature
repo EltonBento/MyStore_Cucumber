@@ -12,7 +12,7 @@ And I am at My Addresses page
 And I have at least one address added before
 When I delete the address
 Then the address should be removed from the list
-
+@address
 Scenario: Updating an address
 Given I had signed in
 And I am at My Addresses page

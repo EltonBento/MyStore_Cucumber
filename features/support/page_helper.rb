@@ -27,4 +27,17 @@ module Pages
     def order_page
         @order_page ||= OrderPage.new
     end
+
+    def new_address_page
+        @new_address_page ||= NewAddressPage.new
+    end
+    
+    def my_address_page
+        @my_address_page ||= MyAddressPage.new
+    end    
+
+    def my_wishlist_page
+        @my_wishlist_page ||= MyWishlistPage.new
+    end
+
 end    

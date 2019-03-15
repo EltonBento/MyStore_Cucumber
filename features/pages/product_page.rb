@@ -4,13 +4,7 @@ class ProductPage < SitePrism::Page
     element :quantity_wanted, '#quantity_wanted'
     element :quantity_up_btn, 'a.btn btn-default button-plus product_quantity_up'
     element :add_to_cart_btn, '#add_to_cart > button'
-
-
-    def add_two_products        
-        quantity_wanted.set '2'
-        add_to_cart_btn.click
-        page.find(:xpath,'//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span').click        
-    end
+    element :add_wishlist_btn, '#wishlist_button'
 
 
     def add_products(number)        
@@ -18,5 +12,9 @@ class ProductPage < SitePrism::Page
         add_to_cart_btn.click
         page.find(:xpath,'//*[@id="layer_cart"]/div[1]/div[2]/div[4]/span').click        
     end
+
+    def add_to_wishlist
+        add_wishlist_btn.click
+    end     
 
 end    
